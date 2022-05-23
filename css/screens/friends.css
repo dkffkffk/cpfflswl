@@ -1,0 +1,55 @@
+.screen-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+}
+.screen-header__title{
+    font-size: 25px;
+    font-weight: 700;
+}
+.screen-header__icon i{
+    margin-right: 15px;
+}
+.screen-header__icon i:last-child{
+    margin-right: 0px;
+}
+.friends-display-link{
+    display: block;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.04);
+    padding: 10px 0px;
+    margin-bottom: 5px;
+}
+.friends-screen__channel{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.friends-screen__channel--header{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+@keyframes hideSplashScreen{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    padding: 200px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 122px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;
+    animation-delay: 3s;
+}

@@ -1,0 +1,33 @@
+.suggestions{
+    padding: 10px 25px;
+}
+.suggestions__title{
+    margin-bottom: 30px;
+}
+.suggestions__icons{
+    display: flex;
+    margin-top: 25px;
+}
+.suggestions__icon{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.suggestions__icon--img{
+    margin-bottom: 5px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.fa-quote-right{
+    color: white;
+}
+.suggestions__icon-text{
+    color: rgba(0, 0, 0, 0.5);
+}
